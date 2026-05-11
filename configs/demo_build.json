@@ -1,0 +1,12 @@
+{
+  "corpus_path": "data/demo_corpus.jsonl",
+  "output_path": "artifacts/demo_index.json",
+  "encoder": {
+    "kind": "hashing",
+    "dimension": 192
+  },
+  "query_understanding": {
+    "enabled": true
+  }
+}
+

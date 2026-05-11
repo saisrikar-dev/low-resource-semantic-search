@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "low-resource-semantic-search"
+version = "0.1.0"
+description = "Multilingual semantic search and query understanding for low-resource languages."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Sai Srikar" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+transformer = [
+  "sentence-transformers>=2.7"
+]
+
+[project.scripts]
+lsrs = "low_resource_semantic_search.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
